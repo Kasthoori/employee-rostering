@@ -76,5 +76,11 @@ You can run the server by
 
 python3 manage.py runserver
 
+Next thing to work registration router it need to install allauth
+
+pip3 install allauth
+
+Then need to include "allauth.account" to setting.py
+
 
 

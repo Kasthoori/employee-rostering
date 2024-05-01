@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'dj_rest_auth',
     "corsheaders",
-    "allauth"
+    "allauth",
+    "allauth.account"
 ]
 
 #Added Parameter
@@ -65,11 +66,16 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware'
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000"
 ]
+
+DEFAULT_AUTHENTICATION_CLASSES = [
+        'rest_framework.authentication.TokenAuthentication'
+    ]
 
 ROOT_URLCONF = 'employeerostering.urls'
 
