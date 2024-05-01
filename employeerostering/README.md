@@ -1,3 +1,6 @@
+employee-rostering
+
+
 Need to create .env file in root directory to add some configurations.
 After that it need to load from .env file. In order to do that it need to
 install decouple
