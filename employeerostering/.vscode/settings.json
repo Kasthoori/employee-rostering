@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "allauth",
+        "asgiref",
+        "authtoken",
+        "corsheaders",
+        "djangorestframework",
+        "employeerostering",
+        "mysqlclient",
+        "sqlparse"
+    ]
+}
