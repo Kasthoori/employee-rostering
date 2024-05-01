@@ -38,7 +38,43 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:8080",
     "http://127.0.0.1:9000",
+
+    "http://localhost:3000" -> this need to add if connect with React Frontend. 
 ]
+
+If work with django rest framework it need to install rest framework
+
+pip3 install djangorestframework
+pip3 install markdown       # Markdown support for the browsable API.
+pip3 install django-filter  # Filtering support
+
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+]
+
+urlpatterns = [
+    ...
+    path('api-auth/', include('rest_framework.urls'))
+]
+
+it need to install python-decouple
+
+pip3 install python-decouple
+
+Now need to issue following command
+
+python3 manage.py makemigrations
+
+and 
+
+python3 manage.py migrate
+
+This create and update database
+
+You can run the server by
+
+python3 manage.py runserver
 
 
 
